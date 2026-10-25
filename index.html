@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131d">
+  <meta name="description" content="Encomende um site de apresentação personalizado para seu trabalho escolar com o NotaPronta.">
+  <title>NotaPronta — Seu trabalho, em outro nível</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="NotaPronta início"><span class="brand-mark">N<span>.</span></span><span>NotaPronta<small>APRESENTAÇÕES DIGITAIS</small></span></a>
+    <a class="top-link" href="#como-funciona">Como funciona <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> ENCOMENDAS PERSONALIZADAS</div>
+        <h1>Seu trabalho.<br><em>Em outro nível.</em></h1>
+        <p>Transforme seu tema em um site de apresentação exclusivo, interativo e pronto para mostrar em sala de aula.</p>
+        <a class="primary-link" href="#pedido">Montar meu pedido <span>↓</span></a>
+        <div class="hero-meta"><span>✦ Design personalizado</span><span>✦ Feito para apresentar</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de uma apresentação digital">
+        <div class="glow"></div><div class="float-chip chip-one">✦ INTERATIVO</div><div class="float-chip chip-two">SEU TEMA, SUA IDENTIDADE</div>
+        <div class="mock-window"><div class="mock-top"><i></i><i></i><i></i><span>NOTAPRONTA / PROJETO</span></div><div class="mock-content"><div class="mock-kicker">APRESENTAÇÃO DIGITAL</div><div class="mock-title">Ideias que<br><b>ganham vida.</b></div><div class="mock-line"></div><div class="mock-cards"><div><span>01</span><b>Contexto</b><small>Entenda a origem</small></div><div><span>02</span><b>Conceitos</b><small>Explore as ideias</small></div><div><span>03</span><b>Conclusão</b><small>Conecte tudo</small></div></div><div class="mock-orbit orbit-a"></div><div class="mock-orbit orbit-b"></div><div class="mock-star">✳</div></div></div>
+      </div>
+    </section>
+
+    <section class="process" id="como-funciona">
+      <div class="section-heading"><div class="eyebrow">SIMPLES DO COMEÇO AO FIM</div><h2>Você explica. <em>A gente transforma.</em></h2></div>
+      <div class="process-grid"><article><span class="step-no">01</span><div class="step-icon">☷</div><h3>Conte sua ideia</h3><p>Preencha o diagnóstico e escolha o estilo ideal para seu trabalho.</p></article><article><span class="step-no">02</span><div class="step-icon">R$</div><h3>Veja o orçamento</h3><p>Confira o valor estimado entre R$ 20 e R$ 45 antes de enviar o pedido.</p></article><article><span class="step-no">03</span><div class="step-icon">↗</div><h3>Combine no WhatsApp</h3><p>Recebemos seu relatório. Pagamento e detalhes são combinados diretamente no privado.</p></article></div>
+    </section>
+
+    <section class="order-section" id="pedido">
+      <div class="order-intro"><div class="eyebrow">VAMOS COMEÇAR</div><h2>Conte como você<br>imagina <em>seu projeto.</em></h2><p>Marque as opções que fazem sentido. Você verá um resumo e um orçamento estimado antes de enviar.</p><div class="side-note"><span>✳</span><div><b>Não é um gerador automático.</b><p>O formulário organiza seu pedido. Depois da confirmação e do pagamento, o site do trabalho é desenvolvido separadamente e personalizado para você.</p></div></div><div class="price-range"><small>ORÇAMENTO DOS PROJETOS</small><strong>R$ 20 <span>—</span> R$ 45</strong></div></div>
+      <div class="form-card">
+        <div class="form-progress"><span>DIAGNÓSTICO DO PROJETO</span><span id="completionText">0% preenchido</span></div><div class="progress-track"><div id="completionBar"></div></div>
+        <form id="orderForm">
+          <div class="form-block"><label class="field-label" for="topic">01 / Qual é o tema do trabalho? <b>*</b></label><input id="topic" name="topic" required maxlength="140" placeholder="Ex.: Constituição Federal de 1988"><div class="field-help">Pode ser um tema escolar, científico, histórico ou técnico.</div></div>
+          <div class="form-row"><div class="form-block"><label class="field-label" for="subject">02 / Matéria</label><input id="subject" name="subject" maxlength="80" placeholder="Ex.: História"></div><div class="form-block"><label class="field-label" for="grade">03 / Nível escolar</label><select id="grade" name="grade"><option>Ensino Fundamental II</option><option selected>Ensino Médio</option><option>Curso técnico</option><option>Faculdade</option><option>Outro</option></select></div></div>
+          <div class="form-block"><span class="field-label">04 / O trabalho será individual ou em grupo?</span><div class="choice-grid two"><label class="choice"><input type="radio" name="workType" value="Individual" checked><span><b>👤</b> Individual</span></label><label class="choice"><input type="radio" name="workType" value="Em grupo"><span><b>👥</b> Em grupo</span></label></div></div>
+          <div class="form-block" id="groupMembersBlock" hidden><label class="field-label" for="groupMembers">Nomes dos participantes <b>*</b></label><textarea id="groupMembers" name="groupMembers" maxlength="500" rows="3" placeholder="Digite o nome de cada participante, um por linha"></textarea><div class="field-help">Inclua todos os integrantes do grupo, separados por linha ou vírgula.</div></div>
+          <div class="form-block"><span class="field-label">05 / Qual é o objetivo?</span><div class="choice-grid" id="objectiveChoices"><label class="choice"><input type="radio" name="objective" value="Apresentar em sala de aula" checked><span><b>🎤</b> Apresentar em sala</span></label><label class="choice"><input type="radio" name="objective" value="Exposição de feira ou evento"><span><b>✳</b> Feira ou evento</span></label><label class="choice"><input type="radio" name="objective" value="Projeto ou portfólio"><span><b>▧</b> Projeto / portfólio</span></label><label class="choice"><input type="radio" name="objective" value="Outro objetivo"><span><b>＋</b> Outro objetivo</span></label></div></div>
+          <div class="form-block"><span class="field-label">06 / Escolha a profundidade</span><div class="choice-grid three"><label class="choice"><input type="radio" name="depth" value="Essencial" checked><span><b>Essencial</b><small>Direto ao ponto</small></span></label><label class="choice"><input type="radio" name="depth" value="Completo"><span><b>Completo</b><small>Explicações e exemplos</small></span></label><label class="choice"><input type="radio" name="depth" value="Aprofundado"><span><b>Aprofundado</b><small>Mais contexto e análise</small></span></label></div></div>
+          <div class="form-block"><span class="field-label">07 / Qual estilo combina com você?</span><div class="style-grid"><label class="style-choice"><input type="radio" name="visual" value="Moderno e imersivo" checked><span class="style-swatch swatch-immersive"><i></i><i></i><i></i></span><b>Moderno e imersivo</b><small>Impactante e elegante</small></label><label class="style-choice"><input type="radio" name="visual" value="Didático e ilustrado"><span class="style-swatch swatch-didactic"><i></i><i></i><i></i></span><b>Didático e ilustrado</b><small>Visual e fácil de entender</small></label><label class="style-choice"><input type="radio" name="visual" value="Acadêmico e formal"><span class="style-swatch swatch-academic"><i></i><i></i><i></i></span><b>Acadêmico e formal</b><small>Organizado e sóbrio</small></label><label class="style-choice"><input type="radio" name="visual" value="Cinematográfico"><span class="style-swatch swatch-cinema"><i></i><i></i><i></i></span><b>Cinematográfico</b><small>Uma experiência marcante</small></label></div></div>
+          <div class="form-block"><span class="field-label">08 / O que gostaria de incluir?</span><div class="feature-grid"><label class="check-option"><input type="checkbox" name="features" value="Imagens e ilustrações" checked><span>Imagens e ilustrações</span></label><label class="check-option"><input type="checkbox" name="features" value="Linha do tempo"><span>Linha do tempo</span></label><label class="check-option"><input type="checkbox" name="features" value="Animações suaves"><span>Animações suaves</span></label><label class="check-option"><input type="checkbox" name="features" value="Menu de navegação interativo"><span>Menu interativo</span></label><label class="check-option"><input type="checkbox" name="features" value="Gráficos e diagramas"><span>Gráficos e diagramas</span></label><label class="check-option"><input type="checkbox" name="features" value="Referências bibliográficas"><span>Referências bibliográficas</span></label><label class="check-option"><input type="checkbox" name="features" value="Conclusão e resumo" checked><span>Conclusão e resumo</span></label><label class="check-option"><input type="checkbox" name="features" value="Fontes e citações no conteúdo"><span>Fontes e citações</span></label></div></div>
+          <div class="form-row"><div class="form-block"><label class="field-label" for="deadline">09 / Prazo desejado</label><select id="deadline" name="deadline"><option value="Sem urgência definida" selected>Sem urgência definida</option><option value="Até 24 horas">Até 24 horas</option><option value="2 a 3 dias">2 a 3 dias</option><option value="4 a 7 dias">4 a 7 dias</option><option value="Mais de uma semana">Mais de uma semana</option></select></div><div class="form-block"><label class="field-label" for="pages">Tamanho estimado</label><select id="pages" name="pages"><option value="Enxuto (4–5 seções)">Enxuto · 4–5 seções</option><option value="Padrão (6–8 seções)" selected>Padrão · 6–8 seções</option><option value="Amplo (9–12 seções)">Amplo · 9–12 seções</option></select></div></div>
+          <div class="form-block"><label class="field-label" for="details">10 / Alguma orientação extra? <span>opcional</span></label><textarea id="details" name="details" maxlength="700" rows="3" placeholder="Ex.: o professor pediu para destacar os direitos fundamentais..."></textarea></div>
+          <div class="form-block"><label class="field-label" for="name">11 / Como podemos te chamar? <span>opcional</span></label><input id="name" name="name" maxlength="70" placeholder="Seu nome ou apelido"></div>
+          <div class="quote-box"><div><span class="quote-label">ORÇAMENTO ESTIMADO</span><div class="quote-price" id="quotePrice">R$ 25,00</div><p id="quoteDescription">Projeto padrão com recursos visuais.</p></div><div class="quote-tag">SEM PAGAMENTO<br>NESTA ETAPA</div></div>
+          <div class="summary-box"><div class="summary-head"><b>Resumo do seu pedido</b><span>Confira antes de enviar</span></div><div id="orderSummary">Preencha o tema para começar a montar seu resumo.</div></div>
+          <label class="consent"><input type="checkbox" id="confirmInfo" required><span>Confirmo que as informações estão corretas e entendo que o orçamento é estimado; prazo e pagamento serão combinados diretamente no WhatsApp.</span></label>
+          <button class="submit-btn" type="submit">Enviar pedido pelo WhatsApp <span>↗</span></button><p class="privacy-note">O botão abrirá uma conversa com o relatório preenchido. Você precisará tocar em enviar no WhatsApp.</p>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+    <section class="faq"><div class="eyebrow">ANTES DE ENVIAR</div><h2>Algumas coisas importantes.</h2><div class="faq-grid"><article><b>O site é criado na hora?</b><p>Não. Este formulário reúne as especificações. O site exclusivo começa a ser desenvolvido depois que o pedido e o pagamento forem combinados.</p></article><article><b>Como funciona o pagamento?</b><p>Você combina diretamente com o responsável pelo NotaPronta no WhatsApp. Não há cobrança dentro desta página.</p></article><article><b>O que vou receber?</b><p>Um link para um site independente, personalizado para seu tema e organizado para apresentar em sala de aula ou evento.</p></article></div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#inicio"><span class="brand-mark">N<span>.</span></span><span>NotaPronta<small>APRESENTAÇÕES DIGITAIS</small></span></a><span>Um tema. Uma ideia. Uma apresentação única.</span><a href="#pedido">Fazer um pedido ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
